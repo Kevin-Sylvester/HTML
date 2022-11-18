@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+            <label for="mobile">Mobile Number : </label>
+            <input type="number" id="mobile" name="mobile" placeholder="Enter your number" min="0">
+        </div>
+        <div>
+            <label for="gender">Gender : </label>
+            <input type="radio" id="male" name="gender" placeholder="Male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <div>
+            <label for="dob">DOB : </label>
+            <input type="datetime" id="dob" name="dob" placeholder="Enter your DOB">
+        </div>
+        <div>
+            <label for="color">Color : </label>
+            <input type="color" id="color" name="color" placeholder="Enter your fav color">
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <label for="range">Tech Knowledge : </label>
+            <input type="range" id="range" name="range" min="0" max="10" value="5">
+        </div>
+        <div>
+            <label for="feedback" style="display: flex;align-items: flex-start;"> Feedback : </label>
+            <textarea name="feedback" rows="10" cols="30" placeholder="Please enter your feedback"></textarea>
+        </div>
+        <div>
+            <fieldset style="width:30rem; height: 100px;">
+                <legend>Hobbies:</legend>
+                <label for="fname">Sports</label><br>
+                <input type="text" id="fname" name='Enter your fav sport'><br>
+                <input type="text" id="lname" name="lname" placeholder="Enter your fav sport"><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+            <div>
+                <button type="button" onclick="alert('Hola')">Click Me</button>
+            </div>
+            <div>
+                <label for="cars">Choose your favourite car:</label>
+                <select id="cars" name="cars" style="width:100px;text-align:center" size="4">
+                    <option value="volvo">Volvo</option>
+                    <option value="lambo">Lambo</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <style>
+        div {
+            margin: 20px;
+        }
+    </style>
+</body>
+
+</html>
